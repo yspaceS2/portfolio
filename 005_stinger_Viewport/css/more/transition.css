@@ -1,0 +1,69 @@
+@charset "utf-8";
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+#wrap h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+.prod_list{
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.prod_list img{
+    width: 300px;
+    height: 200px;
+}
+.prod_list li{
+    margin: 50;
+    cursor: pointer;
+    /* 포지션 위치기준값 */
+    position: relative;
+    /* 박스 바깥 가려줌 | 이 설정이 없으면 caption 박스가 이미지 위로 페이드 아웃*/
+    overflow: hidden;
+}
+.caption{
+    color: white;
+}
+.prod_list .caption h2{
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 12px;
+}
+.prod_list .caption h2+p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.prod_list .caption h2+p+p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* 트랜지션 효과 */
+.prod_list .caption{
+    width: 300px;
+    height: 200px;
+    border-top: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    bottom: -200px;
+    z-index: 1;
+    opacity: 0;
+    /* 트랜지션 */
+    transition: all 0.2s linear;
+}
+/* (중요) 호버 시 동작 */
+.prod_list li:hover .caption{
+    opacity: 1;
+    transform: translateY(-200px);
+}

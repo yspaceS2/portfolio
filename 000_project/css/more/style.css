@@ -1,0 +1,108 @@
+@charset "utf-8";
+body{
+    font-size: 14px;
+    line-height: 1.4;
+    color: #111;
+    background-color: #000;
+}
+#wrap{
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #d3d3d3;
+}
+/* Header */
+h1 img{
+    width: 80px;
+}
+.menu ul li {
+    display: inline-block;
+    margin: 20px;
+}
+.menu ul li a:hover{
+    color: red;
+    background-color: yellow;
+}
+/* Contents */
+section>h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    margin: 50px 0;
+}
+fieldset{
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Footer */
+footer{
+    background-image: url(../images/waterboom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+}
+footer p {
+    font-size: 24px;
+    font-weight: 700px;
+    line-height: 120px;
+}
+
+/* 추가 작업 */
+main {
+    margin-bottom: 24px;
+}
+
+
+/* /Footer */
+/* body{
+    background-color: black;
+}
+#wrap{
+    width: 80%;
+    background-color: #d3d3d3;
+    margin: 0 auto;
+    text-align: center;
+}
+header{
+    margin-bottom: -30px;
+}
+section{
+    margin: 50px auto;
+}
+h1, h2{
+    font-family: "Jua", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+img{
+    width: 100px;
+    height: 60px;
+}
+#wrap nav ul li{
+    display: inline;
+    padding: 20px 20px;
+}
+button{
+    border-radius: 5px;
+}
+fieldset{
+    border: 1px solid silver;
+    width: 70%;
+    height: 150px;
+    margin: 0 auto;
+}
+fieldset ul{
+    margin-top: 20px;
+}
+footer{
+    background-image: url(../images/waterboom.jpg);
+    height: 150px;
+    line-height: 150px;
+    font-size: 24px;
+    font-weight: bold;
+}
+a:hover{
+    background-color: black;
+    color: white;
+} */
