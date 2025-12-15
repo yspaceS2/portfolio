@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project, Module 제이쿼리</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="apple-touch-icon-precomposed" href="#">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <style>
+        body{
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #333;
+        }
+        nav{
+            width: 50%;
+            margin: 100px auto;
+            text-align: center;
+            border: 1px solid #000;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            padding: 0 24px;
+        }
+        nav ul li a{
+            font-size: 1.2rem;
+        }
+        /* 스크립트 사용 DOM의 스타일 */
+        .alert{
+            position: fixed;
+            left: 50%;
+            top: 2%;
+            z-index: 99999;
+            transform: translateX(-50%);
+            /* 로드 시 안보이도록 코딩 */
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+        </ul>
+    </nav>
+    <section>
+        <a href="#">내용추가</a>
+    </section>
+<script>
+    // body태그 끝에 append(추가내용)
+    $('body').append('<div class="alert"><img src="./images/alert.png" alt="준비중 알림창"></div>');
+    /* 이벤트 */
+    // a태그의 href 속성값이 "#"인 DOM 객체를 클릭하면
+    $("a[href='#']").on("click",function(e){
+        // 기존의 하이퍼링크 이벤트를 제거하고
+        e.preventDefault();
+        // alert클래스를 나타나게 함 = 준비중 알림창
+        $('.alert').stop().fadeIn(800);
+        // 2초뒤에 다시 사라지게 함
+        setTimeout(function(){
+            $('.alert').stop().fadeOut(800);
+        },2000)
+    })
+    
+</script>
+</body>
+</html>

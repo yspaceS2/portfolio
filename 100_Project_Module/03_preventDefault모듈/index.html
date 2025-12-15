@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Module, 제이쿼리 게시판탭</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="apple-touch-icon-precomposed" href="#">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/faq_tab.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+</head>
+<body>
+    <!-- 전체 탭메뉴 -->
+    <div class="container">
+        <!-- Tab Menu -->
+        <div class="tabs">
+            <!-- Tab Button -->
+            <ul class="tab_btn">
+                <li class="on">회원</li>
+                <li>제품</li>
+                <li>이벤트</li>
+                <li>기타</li>
+            </ul>
+            <!-- /Tab Button -->
+        </div>
+        <!-- /Tab Menu -->
+        <!-- Tab Contents -->
+        <div class="tab_contents">
+            <!-- TabMenu01 -->
+            <div class="list">
+                <ul>
+                    <!-- 탭메뉴1+질문답1 -->
+                    <li>
+                        <!-- 질문영역 -->
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">아이디와 비밀번호는 어디에서 찾을수 있나요?</dd>
+                        </dl>
+                        <!-- /질문영역 -->
+                        <!-- 답변영역 -->
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- /답변영역 -->
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">개인정보 변경은 어디서 하나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">온오프라인 통합 회원이 되려면 어떻게 하나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">회원 탈퇴는 어떻게 하나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">재가입을 할 수 있나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">국적이 외국인인 경우에도 가입이 가능한가요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>  
+                </ul>
+            </div>
+            <!-- /TabMenu01 -->
+            <!-- TabMenu02-->
+            <div class="list">
+                <ul>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">베이커리 칼로리는 어떻게 확인할 수 있나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">개인정보 변경은 어디서 하나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">온오프라인 통합 회원이 되려면 어떻게 하나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">회원 탈퇴는 어떻게 하나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">재가입을 할 수 있나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">국적이 외국인인 경우에도 가입이 가능한가요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>                                                                                
+                </ul>
+            </div>
+            <!-- /TabMenu02 -->
+            <!-- TabMenu03-->
+            <div class="list">
+                <ul>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">개인정보 변경은 어디서 하나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">개인정보 변경은 어디서 하나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">온오프라인 통합 회원이 되려면 어떻게 하나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">회원 탈퇴는 어떻게 하나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">재가입을 할 수 있나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">국적이 외국인인 경우에도 가입이 가능한가요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>                                                                                
+                </ul>
+            </div>
+            <!-- /TabMenu03 -->
+            <!-- TabMenu04-->
+            <div class="list">
+                <ul>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">사이트에서 확인 되지 않는 정보 문의는 어떻게 해야 하나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">개인정보 변경은 어디서 하나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">온오프라인 통합 회원이 되려면 어떻게 하나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">회원 탈퇴는 어떻게 하나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">재가입을 할 수 있나요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <dl class="question">
+                            <dt>Q</dt>
+                            <dd class="down">국적이 외국인인 경우에도 가입이 가능한가요?</dd>
+                        </dl>
+                        <div class="answer">
+                            <dl>
+                                <dt>A</dt>
+                                <dd>
+                                    로그인 페이지에서 아이디(ID)와 비밀번호찾기 클릭 후 관련 항목을 입력하시면 쉽게 안내 받으실 수 있습니다.
+                                    <br>
+                                    온라인 본인 인증/아이핀 인증/이메일 인증등의 절차를 통해 아이디(ID) 및 비밀번호를 찾으실 수 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>                                                                                
+                </ul>
+            </div>
+            <!-- /TabMenu04 --> 
+        </div>
+        <!-- /Tab Contents -->
+    </div>
+    <!-- /전체 탭메뉴 -->
+
+<script src="./js/faq_tab.js"></script>
+</body>
+</html>

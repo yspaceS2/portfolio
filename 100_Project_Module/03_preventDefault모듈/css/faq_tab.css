@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* 전체 탭메뉴 */
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+/* Tab Menu */
+.tabs {
+    width: 100%;
+}
+/* Tab Button */
+.tab_btn {
+    display: flex;
+}
+.tab_btn li {
+    width: 25%;
+    border: 1px solid #b5b5b5;
+    text-align: center;
+    line-height: 46px;
+    background-color: #eaeaea;
+    cursor: pointer;
+}
+/* 스크립트 연동 CSS */
+.tab_btn li.on {
+    background: #fff;
+    border: 1px solid #000;
+    border-bottom: none;
+}
+
+/* Tab Contents */
+.tab_contents {
+    width: 100%;
+    height: auto;
+}
+/* 질문영역 */
+.list .question {
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.list .question dt {
+    width: 6%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #5a4b4b;
+}
+.list .question dd {
+    width: 93%;
+    padding-right: 50px;
+}
+.list .question dt,
+.list .question dd {
+    padding: 16px 0;
+}
+
+/* 답변영역 */
+.list .answer {
+    background-color: #eaeaea;
+    padding: 20px 0;
+    line-height: 24px;
+}
+.list .answer dl {
+    display: flex;
+    justify-content: space-between;
+}
+.list .answer dt {
+    text-align: center;
+    width: 6%;
+}
+.list .answer dd {
+    padding-right: 2%;
+    width: 93%;
+}
+/* 스크립트 화살표 배경이미지 */
+.list .question dd.down {
+    background: url(../images/down.png) no-repeat right center;
+}
+.list .question dd.up {
+    background: url(../images/up.png) no-repeat right center;
+}
+
+/* 로딩시 모든 탭 내용 가리기 */
+.tab_contents .list {
+    display: none;
+}
+/* 로딩시 첫번째 탭만 보이기 */
+.tab_contents .list:first-child {
+    display: block;
+}
+/* 로딩시 모든 답변내용 가리기 */
+.tab_contents .list .answer {
+    display: none;
+}
