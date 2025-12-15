@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+/*
+	기본정보
+	- 생성일 : 2024-01-10
+	- 파일명 : variable.css
+	- 포함내용 : 전역변수
+*/
+
+
+/* 전역변수 */
+:root {
+
+  /* 컬러 */
+	--color-white:#fff;
+	--color-black:#000;
+
+	--color-primary:#0046FF;
+	--color-primary-dark:#0036C6;
+	--color-primary-active:#00278E;
+	/* --color-primary-disabled:#A8BFFF; */
+	--color-primary-disabled:#CCDAFF;
+
+	--color-txt01:#12192B;
+	--color-txt02:#313749;
+	--color-txt03:#697082;
+	--color-txt04:#838A9B;
+	--color-txt05:#7E869A;
+	--color-txt06:#656B7B;
+
+	--color-bg-grey01:#A8AEBD;
+	--color-bg-grey02:#C4C8D4;
+	--color-bg-grey03:#E2E4E9;
+	--color-bg-grey04:#EDEFF2;
+	--color-bg-grey05:#F6F7F8;
+	--color-bg-grey06:#F0F1F4;
+	--color-bg-grey07:#D9D9D9;
+
+	--color-bg-blue01:#CCDAFF;
+	--color-bg-blue02:#EBF0FF;
+	--color-bg-blue03:#F5F8FF;
+	--color-bg-blue04:#A8BFFF;
+	--color-bg-blue05:#C4C8D4;
+
+	--color-line01:#A8AEBD;
+	--color-line02:#DBDEE5;
+	--color-line03:#EDEFF2;
+	--color-line04:#F6F7F8;
+	--color-line05:#B1B6C2;
+	--color-line06:#A2A5AF;
+	--color-line07:#E2E4E9;
+
+  	--color-error:#EF0000;
+
+	--color-dimmed: rgba(0,0,0,.7);
+
+
+  	/* 폰트 */
+ 	 --font-pretendard:'Pretendard', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+
+
+	/* 폰트 크기 : Headline */
+	--font-headline48:4.8rem;
+	--font-headline40:4.0rem;
+	--font-headline36:3.6rem;
+	--font-headline32:3.2rem;
+
+ 	/* 폰트 크기 : Title */
+	--font-title24:2.4rem;
+	--font-title20:2.0rem;
+	--font-title18:1.8rem;
+	--font-title16:1.6rem;
+
+  	/* 폰트 크기 : Body Text */
+	--font-txt20:2.0rem;
+	--font-txt18:1.8rem;
+	--font-txt16:1.6rem;
+	--font-txt15:1.5rem;
+	--font-txt14:1.4rem;
+	--font-txt13:1.3rem;
+	--font-txt12:1.2rem;
+	--font-txt10:1.0rem;
+
+
+	/* 폰트 굵기 */
+	--font-bold:700;
+	--font-semibold:600;
+	--font-medium:500;
+	--font-regular:400;
+	--font-light:300;
+
+
+	/* width, height */
+	--width-1200:120rem;
+	--width-100vw:100vw;
+	--width-100per:100%;
+
+	--height-100vh:100vh;
+	--height-100per:100%;
+
+	--header-height:11.4rem;
+
+	/* Line-height */
+	--line-height135per:4.05rem;
+	--line-height150per:1.6875rem;
+
+	/* Letter-Spacing */
+	--letter-spacing-1:-1;
+	--letter-spacing0:0;
+
+	/* 선두께 */
+	--line-10-xxl:1.0rem;
+	--line-4-xl:.4rem;
+	--line-2-lg:.2rem;
+	--line-15-md:.15rem;
+	--line-1-sm:.1rem;
+	--line-05-xs:.05rem;
+
+	/* 그림자 */
+	--shadow-reset:0 0 0 rgba(0, 0, 0, 0);
+	--shadow-sm:0 .1rem .4rem 0 rgba(18, 25, 43, .04);
+	--shadow-md:0 .2rem 1.2rem 0 rgba(18, 25, 43, .12);
+	--shadow-lg:0 .4rem 1.6rem 0 rgba(18, 25, 43, .12);
+
+  	--shadow-primary:.3rem .3rem 1.5rem 0 rgba(0, 39, 142, 0.32);
+	--shadow-blue-filled:.3rem .3rem 1.5rem 0 rgba(0, 70, 255, 0.32);
+	--shadow-grey-outline:.3rem .3rem 1.5rem 0 rgba(145, 152, 169, 0.32);
+	--shadow-grey-filled:.3rem .3rem 1.5rem 0 rgba(105, 112, 130, 0.32);
+	--shadow-primary-sm:0 .1rem .4rem 0 rgba(85, 141, 255, .16);
+	--shadow-primary-md:0 .2rem .8rem 0 rgba(85, 141, 255, .16);
+	--shadow-primary-lg:0 .4rem 1.2rem 0 rgba(85, 141, 255, .16);
+
+	/* 모서리지름 */
+	--radius-32-xxl:3.2rem;
+	--radius-24-xl:2.4rem;
+	--radius-16-lg:1.6rem;
+	--radius-12-lg:1.2rem;
+	--radius-10-md:1.0rem;
+	--radius-8-md:.8rem;
+	--radius-6-sm:.6rem;
+	--radius-4-sm:.4rem;
+
+	/* 여백 */
+	--space-body:2.0rem;
+	--space-60-xmax:6.0rem;
+	--space-48-max:4.8rem;
+	--space-55-max:5.5rem;
+	--space-45-xxl:4.5rem;
+	--space-40-xxl:4.0rem;
+	--space-32-xl:3.2rem;
+	--space-30-xl:3.0rem;
+	--space-24-lg:2.4rem;
+	--space-20-md:2.0rem;
+	--space-16-sm:1.6rem;
+	--space-12-xs:1.2rem;
+	--space-8-xxs:.8rem;
+	--space-6-min:.6rem;
+	--space-4-min:.4rem;
+
+	/* 아이콘사이즈 */
+	--icon-64-max:6.4rem;
+	--icon-48-xl:4.8rem;
+	--icon-36-lg:3.6rem;
+	--icon-24-md:2.4rem;
+	--icon-16-sm:1.6rem;
+	--icon-12-xs:1.2rem;
+
+	--icon-80-xmax-hpg:8.0rem; /* HPG 유형 사이즈 20240312 */
+	--icon-60-max-hpg:6.0rem; /* HPG 유형 사이즈 20240312 */
+	--icon-48-xl-hpg:4.8rem; /* HPG 유형 사이즈 20240312 */
+	--icon-44-xl-hpg:4.4rem; /* HPG 유형 사이즈 20240312 */
+
+	/* 공통아이콘 */
+	--bg-url-64-max:url('../../image/ico-common-max.svg');
+	--bg-url-48-xl:url('../../image/ico-common-xl.svg');
+	--bg-url-36-lg:url('../../image/ico-common-lg.svg');
+	--bg-url-24-md:url('../../image/ico-common-md.svg');
+	--bg-url-16-sm:url('../../image/ico-common-sm.svg');
+	--bg-url-12-xs:url('../../image/ico-common-xs.svg');
+	--bg-url-etc:url('../../image/ico-common-etc.svg');
+	--bg-url-temp:url('../../image/ico-common-temp.svg');
+
+	--bg-url-80-xmax-hpg:url('../../image/ico-80-80.svg'); /* HPG 유형 사이즈 20240311 */
+	--bg-url-60-max-hpg:url('../../image/ico-60-60.svg'); /* HPG 유형 사이즈 20240311 */
+	--bg-url-48-xl-hpg:url('../image/ico-48-48.svg'); /* HPG 유형 사이즈 20240311 */
+
+	--bg-size-64-max:64.0rem auto; /* 64*64 */
+	--bg-size-48-xl:48.0rem auto; /* 48*48 */
+	--bg-size-36-lg:36.0rem auto; /* 36*36 */
+	--bg-size-24-md:24.0rem auto; /* 24*24 */
+	--bg-size-16-sm:16.0rem auto; /* 16*16 */
+	--bg-size-12-xs:12.0rem auto; /* 12*12 */
+	--bg-size-etc:20.0rem auto;
+
+	--bg-size-80-xmax-hpg:calc(80.0rem * 1.45) auto; /* 80*80 HPG 유형 사이즈 20240311 */
+	--bg-size-60-max-hpg:auto calc(6.0rem * 2.7); /* 60*60 HPG 유형 사이즈 20240312 */
+	--bg-size-48-xl-hpg:auto calc(4.8rem * 4); /* 48*48 HPG 유형 사이즈 20240311 */
+	--bg-size-44-xl-hpg:auto calc(4.4rem * 4); /* 44*44 HPG 유형 사이즈 20240311 */
+
+  /* 애니메이션 */
+	--animation-speed-fast:.15s;
+	--animation-speed:.3s;
+	--animation-timing-base:cubic-bezier(.4, 0, .7, 1);
+	--animation-timing-outback:cubic-bezier(.4, 0, .3, 1.8);
+	--animation-timing-outback-sm:cubic-bezier(.4, 0, .1, 1.4);
+	--animation-timing-ease:ease;
+	--animation-timing-linear:linear;
+
+}

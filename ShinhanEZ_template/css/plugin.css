@@ -1,0 +1,15 @@
+/*
+	湲곕낯�뺣낫
+	- �앹꽦�� : 2024-01-10
+	- �뚯씪紐� : plugin.css
+	- �ы븿�댁슜 : animate, mCustomScrollbar, magnific-opoup, slick, swiper
+*/
+
+@import "lib/animate.css";
+/* @import "lib/jquery.mCustomScrollbar.css"; */
+/* @import "lib/magnific-popup.css"; */
+/* @import "lib/slick.css"; 2025-06-16 : 遺덊븘�� ��젣*/
+@import "lib/swiper.css";
+
+.cssAnimate {opacity:0;}
+/* .animate__animated.animate__zoomIn {--animate-delay:500ms;} */

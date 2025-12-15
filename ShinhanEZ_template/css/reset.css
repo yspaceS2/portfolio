@@ -1,0 +1,445 @@
+@charset "utf-8";
+
+/*
+	기본정보
+	- 생성일 : 2024-01-10
+	- 파일명 : reset.css
+	- 포함내용 : 초기화
+*/
+
+
+/* 웹폰트 */
+@import url('fonts.css');
+
+/* 전역변수 */
+@import url('variable.css');
+
+
+/* 초기화 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 62.5%;
+}
+
+html,
+pre {
+  font-family: var(--font-pretendard);
+  font-weight: var(--font-regular);
+}
+
+/* body {-webkit-text-size-adjust:none; text-size-adjust:none;} 아이폰 가로모드시 글씨 커지는 문제 */
+body {
+  font-family: var(--font-pretendard);
+  font-size: var(--font-txt16);
+  color: var(--color-txt02);
+  line-height: 2.4rem;
+  word-break: break-all;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-txt01);
+  font-size: inherit;
+  font-weight: var(--font-semibold);
+}
+
+address {
+  font-style: normal;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+pre {
+  overflow: auto;
+}
+
+sub {
+  vertical-align: sub;
+  line-height: 0;
+}
+
+sup {
+  vertical-align: super;
+  line-height: 0;
+}
+
+b,
+em,
+strong {
+  font-weight: var(--font-semibold);
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+img,
+fieldset {
+  vertical-align: middle;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+table {
+  width: var(--width-100per);
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+  word-break: normal;
+}
+
+th,
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  font-weight: var(--font-semibold);
+}
+
+caption,
+legend {
+  position: static;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+fieldset,
+legend {
+  background-color: transparent;
+}
+
+hr {
+  height: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+a {
+  background-color: transparent;
+  color: var(--color-txt01);
+  text-decoration: none;
+}
+
+a[href^=tel]:not([class^=btn_]) {
+  color: inherit;
+}
+
+body:not(.isDevice) a[href^=tel] {
+  cursor: text;
+  pointer-events: none;
+}
+
+body:not(.isDevice) a[href^=tel]:focus,
+body:not(.isDevice) a[href^=tel]:hover {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  font-size: 16px;
+  text-align: center;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+button[disabled],
+button[disabled]:hover,
+input[disabled] {
+  cursor: default;
+}
+
+button,
+input,
+select,
+option,
+optgroup,
+textarea {
+  border-radius: 0;
+  color: var(--color-txt01);
+  font-family: var(--font-pretendard);
+  font-size: var(--font-txt16);
+  font-weight: var(--font-regular);
+  word-spacing: .1rem;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+/* 아이폰(사파리) 터치 메뉴 활성화 관련 */
+a,
+button,
+[role=button],
+[role=link],
+[role=tab] {
+  -webkit-touch-callout: none;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+input,
+select,
+textarea {
+  line-height: 1.2;
+  vertical-align: middle;
+  box-sizing: border-box;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  -webkit-touch-callout: text;
+}
+
+textarea {
+  resize: vertical
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+/* placeholder, focus */
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-txt04);
+  font-size: var(--font-txt16);
+  opacity: 1;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: var(--color-txt04);
+  font-size: var(--font-txt16);
+  opacity: 1;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: var(--color-txt04);
+  font-size: var(--font-txt16);
+  opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: var(--color-txt04);
+  font-size: var(--font-txt16);
+  opacity: 1;
+}
+
+input::placeholder {
+  text-align: left !important;
+}
+
+input::-webkit-input-placeholder {
+  text-align: left !important;
+}
+
+input:-ms-input-placeholder {
+  text-align: left !important;
+}
+
+input:focus::-webkit-input-placeholder,
+select:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: var(--color-txt01);
+  opacity: 0;
+}
+
+input:focus::-moz-placeholder,
+select:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: var(--color-txt01);
+  opacity: 0;
+}
+
+input:focus:-ms-input-placeholder,
+select:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  color: var(--color-txt01);
+  opacity: 0;
+}
+
+/* 아이폰(사파리) form 요소 박스선 없애기 */
+.ipt {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+}

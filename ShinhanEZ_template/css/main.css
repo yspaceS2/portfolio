@@ -1,0 +1,1962 @@
+@charset "utf-8";
+
+/*
+	기본정보
+	- 생성일 : 2024-01-10
+	- 파일명 : main.css
+	- 포함내용 : main 콘텐츠 스타일 정의
+*/
+
+
+/* main 공통 */
+.main #content {
+  margin-bottom: 0;
+}
+
+.main #content>section {
+  margin-bottom: 0;
+  word-break: keep-all;
+}
+
+#main section[class*="-info"] {
+  padding-top: 10.0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#main .txt-cont h2 {
+  font-size: var(--font-headline48);
+  font-weight: var(--font-semibold);
+  color: var(--color-txt01);
+  letter-spacing: -.1rem;
+  line-height: 6.48rem;
+}
+
+#main .txt-cont h2>span,
+#main .txt-cont p>span,
+#main .txt-cont p>strong {
+  display: block;
+}
+
+#main .txt-cont p>strong {
+  font-size: var(--font-title20);
+  margin-bottom: .8rem;
+}
+
+/* p > strong 상품명 추가 20240328 */
+#main em.MbBlock {
+  font-weight: var(--font-regular) !important;
+}
+
+#main .txt-cont h2>span>em {
+  font-size: var(--font-headline32);
+}
+
+#main .txt-cont p:not(.compliance-number) {
+  margin-top: 2.0rem;
+  font-size: var(--font-txt18);
+  font-weight: var(--font-regular);
+  color: var(--color-txt02);
+  line-height: 2.7rem;
+  word-break: keep-all;
+}
+
+#main .btn-wrap {
+  margin-top: 3.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+#main .btn-wrap>.btn {
+  width: 22.0rem;
+  text-align: left;
+  font-weight: var(--font-semibold);
+  padding: 1.1rem 2.2rem 1.0rem;
+}
+
+#main .keyword-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .8rem;
+  flex-wrap: wrap;
+  margin-top: 2.4rem;
+  position: relative;
+  z-index: 1;
+}
+
+#main .keyword-wrap span {
+  display: block;
+  padding: .6rem 1.2rem .45rem;
+  background-color: var(--color-bg-grey05);
+  border-radius: var(--radius-6-sm);
+  border: .1rem solid var(--color-line02);
+  font-size: var(--font-txt14);
+  font-weight: var(--font-medium);
+  line-height: 2.1rem;
+  color: var(--color-txt02);
+}
+
+#main .compliance-number {
+  font-size: var(--font-txt12);
+  color: var(--color-txt03);
+  margin-top: 2.4rem;
+}
+
+/* 준법감시인 확인필 번호 추가 20240328 */
+
+#main .txt-cont p:not(.compliance-number).animate__animated {
+  --animate-duration: 800ms;
+}
+
+#main .compliance-number.animate__animated {
+  --animate-duration: 2s;
+}
+
+/* 준법감시인 확인필 번호 추가 20240328 */
+#main .keyword-wrap.animate__animated {
+  --animate-duration: 2s;
+}
+
+#main .btn-wrap.animate__animated {
+  --animate-duration: 2.5s;
+}
+
+/* #main .product-info-item .img-cont.animate__animated {--animate-duration:2s;} 2025-06-19 : css 삭제 */
+#main section.space-pb-100 {
+  padding-bottom: 10.0rem;
+}
+
+/* 2025-10-20 : 추가 */
+
+/******************* Mobile *******************/
+@media all and (max-width:768px) {
+
+  .main #content {
+    margin-bottom: 0;
+  }
+
+  #main section[class*="-info"] {
+    padding: 4.0rem 0 0;
+    flex-direction: column;
+  }
+
+  #main .txt-cont h2 {
+    font-size: var(--font-title24);
+    line-height: 3.24rem;
+  }
+
+  /* #main .txt-cont p > span {display:inline;} */
+  #main .txt-cont h2>span>em {
+    font-size: var(--font-title18);
+  }
+
+  #main .txt-cont p:not(.compliance-number) {
+    font-size: var(--font-txt16);
+    line-height: 2.4rem;
+  }
+
+  #main .btn-wrap {
+    margin-top: 1.6rem;
+  }
+
+  #main .btn-wrap>.btn+.btn {
+    margin-left: 0;
+    margin-top: var(--space-8-xxs);
+  }
+
+  /* 2024-11-21 추가 */
+  #main .keyword-wrap {
+    justify-content: center;
+    max-width: 20.0rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #main section.space-pb-100 {
+    padding-bottom: 4.0rem;
+  }
+
+  /* 2025-10-20 : 추가 */
+
+}
+
+/******************* Mobile *******************/
+@media all and (max-width:540px) {
+
+  #main em.MbBlock {
+    display: block;
+  }
+
+}
+
+/* ez-info, esgway-info 이미지 스크롤 위/아래 애니메이션 css */
+#main .img-ani {
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+#main .img-ani .img-ani-bg {
+  position: absolute;
+  top: 0;
+  width: calc((100vw - 1040px) / 2);
+  height: 100%;
+  background-color: var(--color-white);
+}
+
+#main .img-ani .img-ani-bg.left-bg {
+  left: 0;
+}
+
+#main .img-ani .img-ani-bg.right-bg {
+  right: 0;
+}
+
+@media (max-width:639px) {
+  #main .img-ani .img-ani-bg {
+    display: none;
+  }
+}
+
+/* main-visual - 2025-06-19 : 디자인 & 애니메이션 효과 전체 수정 */
+/* 사파리 브라우저 재접속 시 svg 검은박스 버그 수정위해 png로 변경 20240401 */
+.main-visual {
+  width: var(--width-100per);
+  height: 70.0rem;
+  background-image: linear-gradient(139deg, #FBFCFF 9.98%, #E2EFFF 80.11%);
+}
+
+.main-visual .inner-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  min-width: 120.0rem;
+}
+
+.main-visual .inner-wrap>div {
+  display: inline-block;
+}
+
+.main-visual .visual-title h2 {
+  font-size: 5.2rem;
+  font-weight: var(--font-bold);
+  color: var(--color-black);
+  letter-spacing: -.1rem;
+  line-height: 1.3;
+  margin-bottom: 2.6rem;
+}
+
+/* 2024-10-16 : 디자인 변경에 의한 폰트 스타일, margin값 수정 */
+.main-visual .visual-title p {
+  font-size: 3.0rem;
+  font-weight: var(--font-regular);
+  color: var(--color-txt01);
+  line-height: 1.5;
+}
+
+/* 2024-10-16 : 디자인 변경에 의한 폰트 스타일 수정 */
+.main-visual .visual-title p+p {
+  margin-top: 1.6rem;
+}
+
+.main-visual .visual-title .visual-btn {
+  display: inline-block;
+  margin-top: 7.0rem;
+  min-width: 24.0rem;
+  padding: 1.95rem 2.2rem 2.05rem;
+  background-color: #00278E;
+  border: 0;
+  border-radius: 3.0rem;
+  vertical-align: middle;
+  font-size: var(--font-txt20);
+  line-height: 1;
+  color: var(--color-white);
+  transition: all var(--animation-speed-fast) var(--animation-timing-base);
+  cursor: pointer;
+  word-break: keep-all;
+}
+
+.main-visual .visual-img {
+  position: relative;
+  z-index: 1;
+}
+
+.main-visual .visual-img>span {
+  position: absolute;
+  display: block;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  /*opacity:0;*/
+}
+
+.main-visual .visual-img .icon-04 {
+  top: -53.0rem;
+  right: 53rem;
+  width: 32.9rem;
+  height: 32.9rem;
+  background-image: url(../images/main/main-visual-icon4.png);
+  z-index: 1;
+}
+
+.main-visual .visual-img .icon-03 {
+  top: 15rem;
+  right: 120rem;
+  width: 38.0rem;
+  height: 20.0rem;
+  background-image: url(../images/main/main-visual-icon3.png);
+  z-index: 2;
+}
+
+.main-visual .visual-img .icon-02 {
+  top: -30.5rem;
+  right: 124.0rem;
+  width: 7.497rem;
+  height: 10.108rem;
+  background-image: url(../images/main/main-visual-icon2.png);
+  z-index: 3;
+}
+
+.main-visual .visual-img .icon-01 {
+  top: 3.8rem;
+  right: 70.0rem;
+  width: 13.1rem;
+  height: 13.1rem;
+  background-image: url(../images/main/main-visual-icon1.png);
+  z-index: 4;
+}
+
+.main-visual .visual-img .sol-img {
+  top: -24.0rem;
+  right: 14.0rem;
+  width: 52.8rem;
+  height: 64.1rem;
+  background-image: url(../images/main/main-visual-sol.png?ver=1.0);
+  filter: drop-shadow(2.0rem 2.0rem 2.0rem rgba(0, 0, 0, .1));
+  z-index: 5;
+}
+
+.main-visual .visual-img .bg-img {
+  top: -30.8rem;
+  right: -11.0rem;
+  width: 61.2rem;
+  height: 61.2rem;
+  background-image: linear-gradient(180deg, rgb(0, 70, 255) 0%, rgb(0, 70, 255) 100%);
+  background-size: 100% 100%;
+  -webkit-mask-image: url("../images/main/main-visual-bg.png?ver=1.0");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-position: 0% 0%;
+  mask-image: url("../images/main/main-visual-bg.png?ver=1.0");
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  mask-position: 0% 0%;
+  z-index: 1;
+}
+
+/* main visual animation */
+.main-visual .visual-img .bg-img {
+  -webkit-animation: zoom-in 500ms ease-in-out both, bg-space 30s alternate infinite;
+  animation: zoom-in 500ms ease-in-out both, bg-space 30s alternate infinite;
+  opacity: 1;
+}
+
+.main-visual .visual-img .sol-img {
+  -webkit-animation: sol-size 50ms ease-in-out, mainbounce2 2s alternate infinite;
+  animation: sol-size 50ms ease-in-out, mainbounce2 2s alternate infinite;
+}
+
+.main-visual .visual-img .icon-01 {
+  -webkit-animation: icon-move 1s ease, mainbounce3 3s alternate infinite;
+  animation: icon-move 1s ease, mainbounce3 3s alternate infinite;
+}
+
+.main-visual .visual-img .icon-02 {
+  -webkit-animation: icon-move2 1s ease-in-out both, mainbounce2 3s alternate infinite;
+  animation: icon-move2 1s ease-in-out both, mainbounce2 3s alternate infinite;
+}
+
+.main-visual .visual-img .icon-03 {
+  -webkit-animation: fade-in 500ms 500ms ease-in both, mainbounce3 2s alternate infinite;
+  animation: fade-in 300ms 500ms ease-in both, mainbounce3 2s alternate infinite;
+}
+
+.main-visual .visual-img .icon-04 {
+  -webkit-animation: fade-in 300ms 500ms ease-in both, mainbounce 3s alternate infinite;
+  animation: fade-in 300ms 500ms ease-in both, mainbounce 3s alternate infinite;
+}
+
+.main-visual .splitting .char {
+  -webkit-animation: text-active-animation 500ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation: text-active-animation 500ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity .1s, transform .1s;
+}
+
+.main-visual .visual-title p {
+  animation: text-active-animation 1s cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation-delay: 800ms;
+}
+
+.main-visual .visual-title .visual-btn {
+  animation: text-active-animation 1s cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation-delay: 800ms;
+}
+
+/* 2024-10-16 : 다이렉트 링크 연결 버튼 추가 애니메이션 */
+.main-visual .visual-title p+p {
+  animation-delay: 1s;
+}
+
+.main-visual .visual-title .visual-btn {
+  animation-delay: 1s;
+}
+
+/* 2024-10-16 : 다이렉트 링크 연결 버튼 추가 애니메이션 */
+
+/* Split Text (plugin) */
+.word-split-JS {
+  overflow: hidden;
+  opacity: 0;
+}
+
+.word-split-JS.splitting {
+  opacity: 1.0;
+}
+
+.word-split-JS.splitting .word {
+  overflow: hidden;
+  line-height: 1.2;
+  display: inline-block;
+}
+
+.word-split-JS.splitting .char {
+  display: inline-block;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  opacity: 0;
+}
+
+@keyframes text-active-animation {
+  from {
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1.0;
+    filter: Alpha(opacity=100);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1.0;
+    filter: Alpha(opacity=100);
+  }
+
+  to {
+    opacity: 0;
+    filter: Alpha(opacity=0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    filter: Alpha(opacity=0);
+  }
+
+  to {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+  }
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(.3, .3);
+    opacity: 0;
+    filter: Alpha(opacity=0);
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+    filter: Alpha(opacity=100);
+  }
+}
+
+@keyframes bg-space {
+  0% {
+    background-position: 100% 100%;
+  }
+
+  25% {
+    background-position: 95% 100%;
+  }
+
+  50% {
+    background-position: 90% 95%;
+  }
+
+  75% {
+    background-position: 100% 95%;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes icon-move {
+  0% {
+    top: 6.8rem;
+    right: 60.0rem;
+    filter: blur(2.0rem);
+    transform: rotate(110deg);
+    opacity: 0;
+    filter: Alpha(opacity=0);
+  }
+
+  100% {
+    top: 3.8rem;
+    right: 70.0rem;
+    filter: blur(0);
+    transform: rotate(0deg);
+    opacity: 1;
+    filter: Alpha(opacity=100);
+  }
+}
+
+@keyframes icon-move2 {
+  0% {
+    top: -28.5rem;
+    right: 124.0rem;
+    filter: blur(2.0rem);
+    opacity: 0;
+    filter: Alpha(opacity=0);
+  }
+
+  100% {
+    top: -30.5rem;
+    right: 124.0rem;
+    filter: blur(0);
+    opacity: 1;
+    filter: Alpha(opacity=100);
+  }
+}
+
+@keyframes sol-size {
+  0% {
+    height: 0;
+    width: 0;
+    top: 5.0rem;
+    right: 38.6rem;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+  }
+
+  50% {
+    height: 36.5rem;
+    width: 25.8rem;
+    top: -10.0rem;
+    right: 18.6rem;
+    opacity: .5;
+    filter: Alpha(opacity=50);
+  }
+
+  100% {
+    height: 66.5rem;
+    width: 51.8rem;
+    top: -25.0rem;
+    right: 8.6rem;
+    opacity: 1;
+    filter: Alpha(opacity=100);
+  }
+}
+
+@keyframes mainbounce {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  to {
+    -webkit-transform: translateY(2.0rem);
+    transform: translateY(2.0rem);
+  }
+}
+
+@keyframes mainbounce2 {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  to {
+    -webkit-transform: translateY(1.0rem);
+    transform: translateY(1.0rem);
+  }
+}
+
+@keyframes mainbounce3 {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  to {
+    -webkit-transform: translateY(1.5rem);
+    transform: translateY(1.5rem);
+  }
+}
+
+
+/******************* Mobile *******************/
+@media all and (max-width:768px) {
+
+  .main-visual {
+    height: auto;
+    min-width: 32.0rem;
+    margin: 0 auto;
+    background-image: linear-gradient(119deg, #FBFCFF 8.17%, #E2EFFF 87.94%);
+  }
+
+  .main-visual .inner-wrap {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    min-width: auto;
+    text-align: center;
+  }
+
+  .main-visual .visual-title {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4.0rem auto 0;
+    text-align: center;
+    padding: 0;
+  }
+
+  .main-visual .visual-title h2 {
+    font-size: 3.0rem;
+    line-height: 1.2;
+    margin-bottom: 1.0rem;
+  }
+
+  /* 2024-10-16 : 디자인 변경에 의한 폰트 스타일, margin값 수정 */
+  .main-visual .visual-title p {
+    font-size: var(--font-txt18);
+    line-height: 2.7rem;
+  }
+
+  /* 2024-10-16 : 디자인 변경에 의한 폰트 스타일 수정 */
+  .main-visual .visual-title .visual-btn {
+    margin-top: var(--space-20-md);
+    padding: 1.5rem 2.0rem !important;
+    min-width: auto;
+    width: auto;
+    border-radius: 2.5rem;
+    font-size: var(--font-txt16);
+  }
+
+  /* 2024-10-16 : 다이렉트 링크 연결 버튼 추가 */
+  .main-visual .visual-img {
+    display: block !important;
+    min-height: 27.0rem;
+    min-width: 32.0rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .main-visual .visual-img .icon-04 {
+    top: auto;
+    bottom: 20.0rem;
+    right: calc(100vw / 2 + 3.5rem);
+    width: 22.0rem;
+    height: 22.0rem;
+    transform: rotate(-45deg);
+  }
+
+  .main-visual .visual-img .icon-02 {
+    top: auto;
+    bottom: 10.0rem;
+    right: calc(100vw / 2 + 11.5rem);
+    width: 5.0rem;
+    height: 6.0rem;
+    filter: blur(.2rem);
+  }
+
+  .main-visual .visual-img .icon-01 {
+    top: -13.0rem;
+    right: auto;
+    left: calc(100vw /2 + 30.0vw);
+    width: 4.9rem;
+    height: 4.9rem;
+    filter: blur(.2rem);
+  }
+
+  .main-visual .visual-img .sol-img {
+    top: auto;
+    bottom: -3.0rem;
+    right: 0;
+    width: 22.813rem;
+    height: 27.5rem;
+    filter: drop-shadow(.6rem .8rem .8rem rgba(0, 0, 0, .1));
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .main-visual .visual-img .bg-img {
+    top: -3.0rem;
+    right: calc(100vw / 2 - 22.0rem);
+    width: 28.5rem;
+    height: 28.5rem;
+    margin: 0 auto;
+  }
+
+  .main-visual .visual-img .icon-03 {
+    display: none;
+  }
+
+  /* main visual animation */
+  .main-visual .visual-img .icon-01 {
+    -webkit-animation: icon-move 1s ease;
+    animation: icon-move 1s ease;
+  }
+
+  @keyframes sol-size {
+    from {
+      height: 10%;
+      width: 23.9rem;
+      opacity: 0;
+      top: auto;
+      bottom: 2.0rem;
+    }
+
+    to {
+      height: 30.7rem;
+      width: 23.9rem;
+      opacity: 1;
+      top: auto;
+      bottom: -2.0rem;
+    }
+  }
+
+  @keyframes icon-move {
+    0% {
+      top: -10.0rem;
+      right: auto;
+      left: calc(100vw /2 + 30.0vw);
+      filter: blur(2.0rem);
+      opacity: 0;
+      filter: Alpha(opacity=0);
+    }
+
+    100% {
+      top: -13.0rem;
+      right: auto;
+      left: calc(100vw /2 + 30.0vw);
+      filter: blur(.2rem);
+      opacity: 1;
+      filter: Alpha(opacity=100);
+    }
+  }
+
+  @keyframes icon-move2 {
+    0% {
+      top: auto;
+      bottom: 8.0rem;
+      right: calc(100vw / 2 + 11.5rem);
+      filter: blur(2.0rem);
+      opacity: 0;
+      filter: Alpha(opacity=0);
+    }
+
+    100% {
+      top: auto;
+      bottom: 10.0rem;
+      right: calc(100vw / 2 + 11.5rem);
+      filter: blur(.2rem);
+      opacity: 1;
+      filter: Alpha(opacity=100);
+    }
+  }
+
+}
+
+
+/* ez-info */
+.ez-info .txt-cont {
+  margin-bottom: 10.0rem;
+  text-align: center;
+}
+
+.ez-info .txt-cont p {
+  color: var(--color-txt01);
+}
+
+.ez-info .img-cont {
+  width: 100%;
+  height: 52.0rem;
+  background-image: url(../images/main/main-cont-01.png);
+  background-position: 0 73%;
+  background-size: 100%;
+}
+
+/******************* Mobile *******************/
+@media all and (max-width:768px) {
+
+  .ez-info>.inner-wrap {
+    padding: 0 2.0rem;
+  }
+
+  .ez-info .txt-cont {
+    margin-bottom: 3.2rem;
+  }
+
+  .ez-info .img-cont {
+    height: 24.0rem;
+    background-position: 34% 69%;
+    background-size: 247%;
+  }
+
+}
+
+
+/* 
+.direct-info {
+  margin-top: 10.0rem;
+}
+
+.direct-info>.inner-wrap {
+  max-width: var(--width-1200);
+  width: 100%;
+}
+
+.direct-info .direct-wrap {
+  overflow: visible;
+}
+
+
+.direct-info .direct-container {
+  overflow: clip;
+}
+
+.direct-info .txt-cont {
+  margin-bottom: var(--space-40-xxl);
+  text-align: center;
+}
+
+.direct-info .direct-item>.link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 17.0rem 0 3.4rem;
+  transform: scale3d(1, 1, 1);
+  transition: transform var(--animation-speed-fast) var(--animation-timing-outback);
+}
+
+.direct-info .direct-item>.link:active {
+  transform: scale3d(.98, .98, 1);
+}
+
+.direct-info .direct-item .subject {
+  width: 100%;
+  line-height: 1.3;
+  font-weight: var(--font-semibold);
+  font-size: var(--font-txt20);
+  color: var(--color-txt01);
+  text-align: center;
+}
+
+.direct-info .direct-item .description {
+  width: 100%;
+  line-height: 1.3;
+  font-weight: var(--font-regular);
+  font-size: var(--font-txt14);
+  color: var(--color-txt02);
+  text-align: center;
+}
+
+.direct-info .direct-item .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 16.0rem;
+  height: 16.0rem;
+}
+
+.direct-info .direct-item .icon>img {
+  width: var(--width-100per);
+}
+
+.direct-info .swiper-button-next,
+.direct-info .swiper-button-prev {
+  width: 4.4rem;
+  height: 4.4rem;
+  background: var(--color-white);
+  border: var(--line-1-sm) solid var(--color-line03);
+  border-radius: 50%;
+  box-shadow: 0 .2rem .8rem 0 rgba(18, 25, 43, .04);
+  ;
+}
+
+.direct-info .swiper-button-next {
+  right: -10.6rem;
+}
+
+.direct-info .swiper-button-prev {
+  left: -10.6rem;
+}
+
+.direct-info .swiper-button-next:after,
+.direct-info .swiper-button-prev:after {
+  content: '';
+  font-size: 0;
+  line-height: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: auto;
+  background: url('../images/main/ico-select-arr.svg') no-repeat center;
+  background-size: contain;
+  transform: rotate(-90deg);
+}
+
+.direct-info .swiper-button-prev:after {
+  transform: rotate(90deg);
+} */
+
+
+
+.direct-wrap {
+  margin-top:20px;
+  position: relative;
+  width: 100%;
+}
+
+.direct-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.direct-item .link {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+
+.direct-item .link .subject{
+  display: block;
+}
+
+
+@media (max-width: 1024px) {
+  .direct-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .direct-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .direct-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/******************* Mobile *******************/
+@media all and (max-width:768px) {
+
+  .direct-info {
+    margin-top: 3.6rem;
+  }
+
+  .direct-info .txt-cont {
+    margin-bottom: var(--space-24-lg);
+  }
+
+  .direct-info .direct-item>.link {
+    padding: 9.4rem 0 0;
+  }
+
+  .direct-info .direct-item .subject {
+    font-size: var(--font-txt14);
+  }
+
+  .direct-info .direct-item .description {
+    font-size: var(--font-txt12);
+  }
+
+  .direct-info .direct-item .icon {
+    width: 8.6rem;
+    height: 8.6rem;
+  }
+
+}
+
+
+/* product-banner - 2025-06-19 : 추가 */
+.product-banner {
+  margin-top: 10.0rem;
+}
+
+.product-banner .product-banner-wrap {
+  height: 40.0rem;
+}
+
+.product-banner .product-banner-item>.inner-wrap {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--width-1200);
+  margin: auto;
+  height: 100%;
+}
+
+.product-banner .product-banner-item.banner1 {
+  background-image: linear-gradient(93deg, #F5FCFF 1.42%, #DBF2FD 97.34%);
+}
+
+/* 실손24 */
+.product-banner .product-banner-item.banner3 {
+  background-image: linear-gradient(93deg, #FFFCF7 1.42%, #F9F3E7 97.34%);
+}
+
+/* 건강 */
+.product-banner .product-banner-item.banner2 {
+  background-image: linear-gradient(93deg, #F6FFFD 1.42%, #F1FEFA 97.34%);
+}
+
+/* 실손의료 */
+.product-banner .product-banner-item.banner4 {
+  background-image: linear-gradient(93deg, #F5FCFF 1.42%, #DBF2FD 97.34%);
+}
+
+/* 해외여행 */
+/*.product-banner .product-banner-item.banner5 {background-image:linear-gradient(93deg, #FFFEF7 1.42%, #FFFDF0 97.34%);}*/
+/* 소상공인 부담경감 크레딧 - 2025-07-09 : 추가 - 2025-08-06 : 삭제 */
+.product-banner .product-banner-item.banner6 {
+  background-image: linear-gradient(180deg, #EAF4FE 32.13%, #FDFEFF 100%);
+}
+
+/* 민생회복 소비쿠폰 신청 - 2025-07-17 : 추가 - 2025-08-06 : 삭제 - 2025-09-16 : 2차 추가 */
+.product-banner .product-banner-item.banner7 {
+  background-image: linear-gradient(96deg, #EBF0FF 54.69%, #F9FAFF 100%);
+}
+
+/* 쏠 Drive - 2025-07-31 : 추가, 컬러 변경 */
+.product-banner .product-banner-item.banner8 {
+  background-image: linear-gradient(101deg, #F5FCFF -16.84%, #E3F5FF 116.53%);
+}
+
+/* 내 보험 찾아줌 서비스 - 2025-08-06 : 추가 */
+.product-banner .product-banner-item-cont {
+  text-align: left;
+  padding-right: 41.5%;
+}
+
+.product-banner .product-banner-item-cont .subject {
+  display: block;
+  line-height: 1.35;
+  font-weight: var(--font-semibold);
+  letter-spacing: -.1rem;
+  font-size: var(--font-headline40);
+  color: var(--color-txt01);
+}
+
+.product-banner .product-banner-item-cont .description {
+  display: block;
+  margin: var(--space-32-xl) 0 var(--space-40-xxl);
+  line-height: 1.3;
+  font-weight: var(--font-regular);
+  font-size: var(--font-txt18);
+  color: var(--color-txt02);
+}
+
+.product-banner .product-banner-item-cont .btn {
+  border-color: #D7DFF3;
+  padding: 2.0rem 3.6rem;
+  font-weight: var(--font-medium);
+}
+
+.product-banner .product-banner-item-cont .btn>em {
+  font-weight: var(--font-medium);
+}
+
+.product-banner .product-banner-item-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 41.5%;
+  max-width: 50.0rem;
+  min-width: 18.0rem;
+  z-index: 1;
+}
+
+/* 2025-07-17 : 추가 */
+.product-banner .product-banner-item-img>img,
+.product-banner .product-banner-item-badge>img {
+  width: var(--width-100per);
+}
+
+/* 2025-07-17 : 추가 */
+.product-banner .product-banner-item.banner6 .product-banner-item-badge {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 11.8rem;
+  height: 8.6rem;
+  margin-right: -69.9rem;
+  z-index: 2;
+}
+
+/* 민생회복 소비쿠폰 신청 - 2025-07-17 : 뱃지 추가 */
+
+.product-banner .product-banner-control {
+  position: absolute;
+  bottom: 2.0rem;
+  left: 50%;
+  right: 0;
+  height: 1.8rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  transform: translate3d(-50%, 0, 0);
+  max-width: 6.5rem;
+  z-index: 1;
+}
+
+.product-banner .product-banner-page {
+  position: relative;
+  bottom: auto;
+  padding: .35rem .3rem;
+  background-color: rgba(0, 22, 68, .6);
+  border-radius: 9.9rem;
+  line-height: 1;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, .7);
+}
+
+.product-banner .product-banner-page .swiper-pagination-current {
+  font-weight: var(--font-medium);
+  color: var(--color-white);
+}
+
+.product-banner .product-banner-control .btn-pause {
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+  width: var(--icon-24-md);
+  height: var(--icon-24-md);
+  margin-left: .1rem;
+  background: url(../images/main/ico-common-md.svg) no-repeat calc(var(--icon-24-md) * -8) calc(var(--icon-24-md) * -3);
+  background-size: var(--bg-size-24-md);
+  transform: scale3d(1, 1, 1);
+  transition: transform var(--animation-speed-fast) var(--animation-timing-outback);
+}
+
+.product-banner .product-banner-control .btn-pause.is-stop {
+  background-position: calc(var(--icon-24-md) * -9) calc(var(--icon-24-md) * -3);
+}
+
+.product-banner .product-banner-control .btn-pause:active {
+  transform: scale3d(.94, .94, 1);
+}
+
+/******************* Mobile *******************/
+@media all and (max-width:768px) {
+
+  .product-banner {
+    margin-top: 4.0rem;
+  }
+
+  .product-banner .product-banner-wrap {
+    height: 22.0rem;
+  }
+
+  .product-banner .product-banner-item-cont {
+    padding-right: 40.5%;
+  }
+
+  .product-banner .product-banner-item-cont .subject {
+    font-size: var(--font-title20);
+  }
+
+  .product-banner .product-banner-item-cont .description {
+    font-size: var(--font-txt14);
+    font-weight: var(--font-medium);
+    margin: var(--space-20-md) 0 var(--space-24-lg);
+  }
+
+  .product-banner .product-banner-item-cont .btn {
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: none;
+    min-width: auto;
+    width: auto;
+    font-size: var(--font-txt12);
+    color: var(--color-primary-dark);
+  }
+
+  .product-banner .product-banner-item-cont .btn::after {
+    content: '';
+    display: inline-block;
+    width: var(--icon-16-sm);
+    height: var(--icon-16-sm);
+    background: url('../images/main/ico-common-sm.svg') no-repeat calc(var(--icon-16-sm) * -4) calc(var(--icon-16-sm) * -2);
+    background-size: var(--bg-size-16-sm);
+    vertical-align: middle;
+    margin-top: -.2rem;
+  }
+
+  .product-banner .product-banner-item-cont .btn:hover,
+  .product-banner .product-banner-item-cont .btn:active {
+    box-shadow: none;
+  }
+
+  /* 2025-07-17 : 추가 */
+  .product-banner .product-banner-item.banner6 .product-banner-item-badge {
+    right: 2.3rem;
+    width: 6.8rem;
+    height: 4.9rem;
+    margin-right: 0;
+  }
+
+  /* 민생회복 소비쿠폰 신청 - 2025-07-17 : 뱃지 추가 */
+  .product-banner .product-banner-item.banner7 .product-banner-item-img {
+    bottom: .8rem;
+  }
+
+  /* 쏠 Drive - 2025-07-31 : 이미지 위치 변경 */
+
+}
+
+
+/* service-info - 2025-06-19 : css 모두 삭제 */
+
+/* esgway-info */
+.esgway-info {
+  padding-top: 12.0rem !important;
+}
+
+.esgway-info .txt-cont {
+  margin-bottom: 10.0rem;
+  text-align: center;
+}
+
+.esgway-info .txt-cont p {
+  color: var(--color-txt01);
+}
+
+.esgway-info .img-cont {
+  width: 100%;
+  height: 52.0rem;
+  background-image: url(../images/main/main-cont-08.png);
+  background-position: 40% 16%;
+  background-size: 100%;
+  background-size: 100%;
+}
+
+/******************* Mobile *******************/
+@media all and (max-width:768px) {
+
+  .esgway-info {
+    padding-top: 4.0rem !important;
+  }
+
+  .esgway-info>.inner-wrap {
+    padding: 0 2.0rem;
+  }
+
+  .esgway-info .txt-cont {
+    margin-bottom: 3.2rem;
+  }
+
+  .esgway-info .img-cont {
+    height: 24.0rem;
+    background-position: 52% 23%;
+    background-size: 180%;
+  }
+
+}
+
+/* digital-info */
+.digital-info {
+  text-align: center;
+}
+
+.digital-info .txt-cont>h2>strong {
+  display: block;
+  width: 19.0rem;
+  margin: 0 auto;
+  padding: 1.0rem 2.0rem;
+  background-color: var(--color-txt02);
+  border-radius: 4.0rem;
+  font-size: var(--font-title24);
+  color: var(--color-white);
+  font-weight: var(--font-semibold);
+  line-height: 3.24rem;
+  letter-spacing: -.1rem;
+  margin-top: 3.2rem;
+}
+
+.digital-info .chart-cont {
+  margin-top: 4.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4.0rem;
+  border-radius: 15.0rem;
+  border: .1rem solid var(--color-line02);
+  position: relative;
+}
+
+.digital-info .chart-cont>ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  min-width: 79.0rem;
+  min-height: 22.0rem;
+  /*margin:0 auto;*/
+}
+
+.digital-info .chart-cont>ul>li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 22.0rem;
+  width: 22.0rem;
+}
+
+.digital-info .chart-cont>ul span,
+.digital-info .chart-cont>div:not(.chart-plus) span {
+  position: relative;
+  display: block;
+  height: 22.0rem;
+  width: 22.0rem;
+  font-size: var(--font-txt20);
+  font-weight: var(--font-semibold);
+  line-height: 2.7rem;
+  letter-spacing: -.1rem;
+  vertical-align: bottom;
+  text-align: center;
+  word-break: keep-all;
+  padding: 11.0rem 5.0rem 5.0rem;
+  z-index: 1;
+}
+
+.digital-info .chart-cont>ul span:before,
+.digital-info .chart-cont>div:not(.chart-plus) span:before {
+  content: '';
+  position: absolute;
+  top: 5.9rem;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  margin: auto;
+  width: 4.4rem;
+  height: 4.4rem;
+  background-image: url(../images/main/ico-44-44.svg);
+  background-repeat: no-repeat;
+  background-size: auto 4.4rem;
+  z-index: 1;
+}
+
+.digital-info .chart-cont>ul span:after,
+.digital-info .chart-cont>div:not(.chart-plus) span:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 22.0rem;
+  height: 22.0rem;
+  border-radius: 100%;
+  opacity: .6;
+  z-index: -1;
+}
+
+.digital-info .chart-cont>ul>li:nth-child(1) span:before {
+  background-position: 0 0;
+}
+
+.digital-info .chart-cont>ul>li:nth-child(1) span:after {
+  background-color: var(--color-bg-grey04);
+}
+
+/* 2025-06-19 : 디자인 컬러 변경으로 수정 */
+.digital-info .chart-cont>ul>li:nth-child(2) {
+  left: 19.0rem;
+}
+
+.digital-info .chart-cont>ul>li:nth-child(2) span:before {
+  background-position: -8.4rem 0;
+}
+
+.digital-info .chart-cont>ul>li:nth-child(2) span:after {
+  background-color: var(--color-bg-grey03);
+}
+
+/* 2025-06-19 : 디자인 컬러 변경으로 수정 */
+.digital-info .chart-cont>ul>li:nth-child(3) {
+  left: 38.0rem;
+}
+
+.digital-info .chart-cont>ul>li:nth-child(3) span:before {
+  background-position: -16.8rem 0;
+}
+
+.digital-info .chart-cont>ul>li:nth-child(3) span:after {
+  background-color: var(--color-bg-grey02);
+}
+
+.digital-info .chart-cont>ul>li:nth-child(4) {
+  left: 57.0rem;
+}
+
+.digital-info .chart-cont>ul>li:nth-child(4) span:before {
+  background-position: -25.2rem 0;
+}
+
+.digital-info .chart-cont>ul>li:nth-child(4) span:after {
+  background-color: var(--color-bg-grey01);
+}
+
+.digital-info .chart-cont>div.chart-plus {
+  position: relative;
+  width: 4.4rem;
+  height: 22.0rem;
+  text-align: center;
+}
+
+.digital-info .chart-cont>div.chart-plus:before,
+.digital-info .chart-cont>div.chart-plus:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-color: var(--color-txt04);
+  z-index: 1;
+}
+
+.digital-info .chart-cont>div.chart-plus:before {
+  width: 4.4rem;
+  height: .1rem;
+}
+
+.digital-info .chart-cont>div.chart-plus:after {
+  width: .1rem;
+  height: 4.4rem;
+}
+
+.digital-info .chart-cont>div:not(.chart-plus) span {
+  color: var(--color-white);
+  padding-top: 12.0rem;
+}
+
+.digital-info .chart-cont>div:not(.chart-plus) span:before {
+  background-position: -33.6rem 0;
+  top: 6.9rem;
+}
+
+.digital-info .chart-cont>div:not(.chart-plus) span:after {
+  background-color: var(--color-txt02);
+  opacity: 1;
+}
+
+.digital-info .chart-cont>ul>li:nth-child(1).animate__animated {
+  --animate-duration: 500ms;
+}
+
+.digital-info .chart-cont>ul>li:nth-child(2).animate__animated {
+  --animate-duration: 800ms;
+}
+
+.digital-info .chart-cont>ul>li:nth-child(3).animate__animated {
+  --animate-duration: 1s;
+}
+
+.digital-info .chart-cont>ul>li:nth-child(4).animate__animated {
+  --animate-duration: 2s;
+}
+
+.digital-info .chart-cont>div.chart-plus.animate__animated {
+  --animate-duration: 2s;
+}
+
+.digital-info .chart-cont>div:not(.chart-plus).animate__animated {
+  --animate-duration: 2s;
+}
+
+
+/******************* Mobile - 2025-06-19 : 모바일 디자인 변경으로 디자인 & 애니메이션 효과 수정 *******************/
+@media all and (max-width:768px) {
+
+  .digital-info>.inner-wrap {
+    padding: 0 2.0rem;
+    text-align: center;
+  }
+
+  .digital-info .txt-cont>h2 {
+    padding: 0 3.0rem;
+  }
+
+  .digital-info .txt-cont>h2>strong {
+    width: 15.4rem;
+    font-size: var(--font-title18);
+    line-height: 2.43rem;
+    letter-spacing: 0;
+    margin-top: 2.4rem;
+  }
+
+  .digital-info .chart-cont {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 32.0rem;
+    margin: 3.0rem auto 0;
+    height: 50.0rem;
+    padding: 3.0rem;
+    border-radius: 8.5rem;
+  }
+
+  .digital-info .chart-cont>ul {
+    align-items: flex-start;
+    min-width: 25.47rem;
+    min-height: 25.69rem;
+    margin: 0 auto;
+  }
+
+  .digital-info .chart-cont>ul>li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 13.5rem;
+    width: 13.5rem;
+  }
+
+  .digital-info .chart-cont>ul span,
+  .digital-info .chart-cont>div:not(.chart-plus) span {
+    height: 13.5rem;
+    width: 13.5rem;
+    font-size: var(--font-txt16);
+    line-height: 2.16rem;
+    letter-spacing: 0;
+  }
+
+  .digital-info .chart-cont>ul span {
+    padding: 7.0rem 2.0rem 4.0rem;
+  }
+
+  .digital-info .chart-cont>div:not(.chart-plus) span {
+    padding: 5.0rem 1.0rem 2.0rem;
+  }
+
+  .digital-info .chart-cont>ul span:before,
+  .digital-info .chart-cont>div:not(.chart-plus) span:before {
+    top: 3.0rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-size: auto 3.2rem;
+  }
+
+  .digital-info .chart-cont>ul span:after,
+  .digital-info .chart-cont>div:not(.chart-plus) span:after {
+    width: 13.5rem;
+    height: 13.5rem;
+  }
+
+  .digital-info .chart-cont>ul>li:nth-child(2) {
+    right: 0;
+    top: 0;
+    left: auto;
+  }
+
+  .digital-info .chart-cont>ul>li:nth-child(3) {
+    left: 0;
+    top: 12.0rem;
+  }
+
+  .digital-info .chart-cont>ul>li:nth-child(4) {
+    left: auto;
+    top: 12.0rem;
+    right: 0;
+  }
+
+  .digital-info .chart-cont>ul>li:nth-child(1) span:before {
+    background-position: 0 0;
+  }
+
+  .digital-info .chart-cont>ul>li:nth-child(2) span:before {
+    background-position: -6.0rem 0;
+  }
+
+  .digital-info .chart-cont>ul>li:nth-child(3) span:before {
+    background-position: -12.2rem 0;
+  }
+
+  .digital-info .chart-cont>ul>li:nth-child(4) span:before {
+    background-position: -18.4rem 0;
+  }
+
+  .digital-info .chart-cont>div.chart-plus {
+    position: relative;
+    width: 13.5rem;
+    height: 11.2rem;
+    margin: 0 auto;
+  }
+
+  .digital-info .chart-cont>div.chart-plus:before {
+    width: 3.2rem;
+  }
+
+  .digital-info .chart-cont>div.chart-plus:after {
+    height: 3.2rem;
+  }
+
+  .digital-info .chart-cont>div:not(.chart-plus) {
+    margin: .6rem auto 0;
+  }
+
+  .digital-info .chart-cont>div:not(.chart-plus) span {
+    padding-top: 7.4rem;
+  }
+
+  .digital-info .chart-cont>div:not(.chart-plus) span:before {
+    top: 3.037rem;
+    background-position: -24.4rem 0;
+  }
+
+  .digital-info .chart-cont>ul>li:nth-child(1).animate__fadeInLeft,
+  .digital-info .chart-cont>ul>li:nth-child(2).animate__fadeInLeft,
+  .digital-info .chart-cont>ul>li:nth-child(3).animate__fadeInLeft,
+  .digital-info .chart-cont>ul>li:nth-child(4).animate__fadeInLeft,
+  .digital-info .chart-cont>div:not(.chart-plus).animate__fadeInRight {
+    animation-name: fadeInDown;
+  }
+
+}
+
+/* insurance-info : 준법감시 내용 추가 20240328 */
+.insurance-info {
+  border-top: .1rem solid var(--color-bg-grey04);
+  margin-top: 10.0rem;
+  padding: 4.0rem 0;
+}
+
+.insurance-info .title-h5 {
+  color: var(--color-txt03);
+  margin-bottom: 1.6rem;
+}
+
+.insurance-info .title-h5>.txt {
+  font-weight: var(--font-medium);
+}
+
+.insurance-info .list.depth-u1>li {
+  color: var(--color-txt03);
+  font-size: var(--font-txt14);
+  word-break: keep-all;
+}
+
+.insurance-info .animate__animated {
+  --animate-duration: 1s;
+}
+
+/******************* Mobile *******************/
+@media all and (max-width:768px) {
+
+  .insurance-info {
+    margin-top: 4.0rem;
+    padding: 4.0rem 2.0rem;
+  }
+
+  .insurance-info .inner-wrap {
+    padding: 0;
+  }
+
+}
+
+
+/*******************  Tablet - 2025-06-19 : .product-banner 추가 *******************/
+@media all and (max-width:1024px) {
+
+  .product-banner .product-banner-item>.inner-wrap {
+    width: var(--width-100per);
+    min-width: 320px;
+  }
+
+  .product-banner .product-banner-item-cont {
+    position: relative;
+    padding-left: 3.0rem;
+    z-index: 2;
+  }
+
+  .product-banner .product-banner-item-cont .MbBlock {
+    display: block;
+  }
+
+}
+
+/*******************  Tablet *******************/
+/* 2024-11-21 추가 - 2025-06-19 : .product-banner 추가 */
+@media all and (min-width:769px) and (max-width:1054px) {
+
+  .product-banner .product-banner-item-cont {
+    padding-right: 50.5%;
+    padding-left: 3.0rem;
+  }
+
+  .product-banner .product-banner-item-img {
+    width: 51.5%;
+  }
+
+  #main .btn-wrap>.btn+.btn {
+    margin-left: 0;
+    margin-top: var(--space-8-xxs);
+  }
+
+}
+
+
+/*******************  Tablet - 2025-06-19 : .main-visual 디자인 & 애니메이션 효과 수정, .product-banner 추가 *******************/
+@media all and (min-width:769px) and (max-width:1199px) {
+
+  #main section[class*="-info"] {
+    padding-top: 6.0rem;
+  }
+
+  .main-visual {
+    height: 66.6rem;
+  }
+
+  .main-visual .inner-wrap {
+    min-width: auto;
+    max-width: 102.4rem;
+  }
+
+  .main-visual .visual-img .icon-04 {
+    top: -50.0rem;
+    right: 40.0rem;
+    width: 32.9rem;
+    height: 32.9rem;
+  }
+
+  .main-visual .visual-img .icon-03 {
+    top: 15rem;
+    right: 64.0rem;
+    width: 38.0rem;
+    height: 20.0rem;
+  }
+
+  .main-visual .visual-img .icon-01 {
+    top: 3.8rem;
+    right: 47.0rem;
+    width: 10.0rem;
+    height: 10.0rem;
+  }
+
+  .main-visual .visual-img .sol-img {
+    width: 40.0rem;
+    height: 54.2rem;
+    top: -17.0rem;
+    right: 6.0rem;
+  }
+
+  .main-visual .visual-img .bg-img {
+    width: 54.4rem;
+    right: -12.0rem;
+    top: -26.8rem;
+    height: 54.3rem;
+  }
+
+  .main-visual .visual-img .icon-02 {
+    display: none;
+  }
+
+  /* main visual animation */
+  .main-visual .visual-img .icon-03 {
+    -webkit-animation: fade-in 500ms 500ms ease-in both;
+    animation: fade-in 300ms 500ms ease-in both;
+  }
+
+  @keyframes icon-move {
+    0% {
+      top: 6.8rem;
+      right: 37.0rem;
+      filter: blur(2.0rem);
+      transform: rotate(110deg);
+      opacity: 0;
+      filter: Alpha(opacity=0);
+    }
+
+    100% {
+      top: 3.8rem;
+      right: 47.0rem;
+      filter: blur(0);
+      transform: rotate(0deg);
+      opacity: 1;
+      filter: Alpha(opacity=100);
+    }
+  }
+
+  .ez-info>.inner-wrap {
+    margin-top: 6.0rem;
+  }
+
+  .product-banner .product-banner-item>.inner-wrap {
+    width: var(--width-100per);
+    min-width: 320px;
+  }
+
+  /* 2025-07-17 : 추가 */
+  .product-banner .product-banner-item-cont {
+    padding-left: 3.0rem;
+  }
+
+  .product-banner .product-banner-item.banner6 .product-banner-item-badge {
+    right: 2.3rem;
+    margin-right: 0;
+  }
+
+  /* 민생회복 소비쿠폰 신청 - 2025-07-17 : 뱃지 추가 */
+
+  /* .digital-info - 테블릿화면 대응 20240329 */
+  .digital-info .chart-cont {
+    flex-direction: column;
+    padding: 3.5% 2.5% 3%;
+    margin: 4.2rem auto 0;
+    width: min-content;
+  }
+
+  .digital-info .chart-cont>ul {
+    margin: 0 auto;
+    min-width: 77.0rem;
+    min-height: 20.0rem;
+  }
+
+  .digital-info .chart-cont>ul>li {
+    width: 20.0rem;
+    height: 20.0rem;
+  }
+
+  .digital-info .chart-cont>ul span,
+  .digital-info .chart-cont>div:not(.chart-plus) span {
+    width: 20.0rem;
+    height: 20.0rem;
+    padding-top: 10.0rem;
+  }
+
+  .digital-info .chart-cont>ul span:before,
+  .digital-info .chart-cont>div:not(.chart-plus) span:before {
+    top: 4.9rem;
+  }
+
+  .digital-info .chart-cont>ul span:after,
+  .digital-info .chart-cont>div:not(.chart-plus) span:after {
+    width: 20.0rem;
+    height: 20.0rem;
+  }
+
+  .digital-info .chart-cont>div.chart-plus {
+    height: 10.0rem;
+    margin: 0 auto;
+  }
+
+  .digital-info .chart-cont>div:not(.chart-plus) {
+    margin: 0 auto;
+  }
+
+  .digital-info .chart-cont>div:not(.chart-plus) span {
+    padding: 11rem 4.0rem 4.0rem;
+  }
+
+  .digital-info .chart-cont>div:not(.chart-plus) span:before {
+    top: 5.9rem;
+  }
+
+}
+
+/*******************  PC - 2025-07-17 추가 *******************/
+@media all and (min-width:1200px) and (max-width:1300px) {
+
+  .product-banner .product-banner-item.banner6 .product-banner-item-badge {
+    right: 2.3rem;
+    margin-right: 0;
+  }
+
+  /* 민생회복 소비쿠폰 신청 - 2025-07-17 : 뱃지 추가 */
+
+}
+
+/******************* 접근성 : 애니메이션 동작 축소하기(Reduced Motion) *******************/
+@media (prefers-reduced-motion: reduce) {
+
+  .animate__animated,
+  .main-visual .word-split-JS.splitting,
+  .main-visual .visual-title p,
+  .main-visual .visual-title .visual-btn,
+  .main-visual .visual-img .bg-img,
+  .main-visual .visual-img .sol-img,
+  .main-visual .visual-img .icon-01,
+  .main-visual .visual-img .icon-02,
+  .main-visual .visual-img .icon-03,
+  .main-visual .visual-img .icon-04 {
+    animation: none;
+    opacity: 1;
+  }
+}

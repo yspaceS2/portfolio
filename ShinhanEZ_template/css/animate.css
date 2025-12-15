@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/*
+  animate.css - https://animate.style/
+  애니메이션 효과
+*/
+
+/* 기본 애니메이션 설정 */
+.animated,
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.faster {
+  animation-duration: 500ms;
+}
+
+.animated.fast {
+  animation-duration: 800ms;
+}
+
+.animated.slow {
+  animation-duration: 2s;
+}
+
+.animated.slower {
+  animation-duration: 3s;
+}
+
+/* cssAnimate 기본 설정 */
+.cssAnimate {
+  opacity: 0;
+}
+
+.cssAnimate.active {
+  opacity: 1;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn,
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+.cssAnimate.fadeIn.active {
+  animation-name: fadeIn;
+}
+
+/* fadeInUp */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp,
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.cssAnimate.fadeInUp.active {
+  animation-name: fadeInUp;
+}
+
+/* fadeInLeft */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft,
+.animate__fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+.cssAnimate.fadeInLeft.active {
+  animation-name: fadeInLeft;
+}
+
+/* fadeInRight */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight,
+.animate__fadeInRight {
+  animation-name: fadeInRight;
+}
+
+.cssAnimate.fadeInRight.active {
+  animation-name: fadeInRight;
+}
